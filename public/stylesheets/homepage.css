@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  /* Animated Heading */
+  .animated-heading {
+    font-size: 3rem;
+    animation: fadeIn 2s ease-in-out, float 3s infinite ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Buttons */
+  .buttons {
+    margin-top: 2rem;
+  }
+  
+  .btn {
+    padding: 0.8rem 1.5rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .login-btn {
+    background: #4caf50;
+    color: white;
+  }
+  
+  .register-btn {
+    background: #2196f3;
+    color: white;
+  }
+  
+  .add-task-btn {
+    background: #ff5722;
+    color: white;
+  }
+  
+  .btn:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .animated-heading {
+      font-size: 2rem;
+    }
+  
+    .btn {
+      padding: 0.6rem 1.2rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .animated-heading {
+      font-size: 1.5rem;
+    }
+  
+    .buttons {
+      flex-direction: column;
+    }
+  
+    .btn {
+      width: 100%;
+      margin: 0.5rem 0;
+    }
+  }
+#log{
+  background-color:#6a11cb
+}

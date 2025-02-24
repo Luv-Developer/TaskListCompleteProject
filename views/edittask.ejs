@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Task</title>
+    <link rel = "stylesheet" type = "text/css" href = "/stylesheets/edit.css">
+</head>
+<body>
+    <div id = "main">
+        <h1>Edit Task</h1>
+        <form action = "/editing" method = "post">
+        <input id = "first" type = "text" name = "previous" value = "<%= tasks.title  %>" required>
+        <input id = "second" type = "text" placeholder="new task name" name = "newtitle" required><br><br>
+        <button>Update Task</button>
+        </form>
+        </div>
+</body>
+</html>
